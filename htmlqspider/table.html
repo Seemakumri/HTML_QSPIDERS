@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table border="1" cellspacing="10px" cellpadding="20px">
+      <!--we can use in with two cell to creating cellspacing and it is use only in table tag. inside space of cell cellspacing , space b/w the cell is called cellpadding-->
+      <thead>
+        <tr>
+          <th>time</th>
+          <th>subjects</th>
+          <th>trainer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>11 to 1</td>
+          <td rowspan="2">SQL</td>
+          <td>Nitin Sir</td>
+        </tr>
+        <tr>
+          <td>12 to 2</td>
+          <td>Hemant Sir</td>
+        </tr>
+
+        <tr>
+          <td>2 to 3</td>
+          <td>Java</td>
+          <!--we cannot use this in tr tag and table tag , we can use only with th and td tag-->
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

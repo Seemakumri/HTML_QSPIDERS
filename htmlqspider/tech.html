@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+    background-color: #f6f5f8;
+    color: #8a2be2;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 50px;
+
+}
+form {
+    background-color: #8a2be2;
+    color: #f6f5f8;
+    padding-left: 20px;
+    border: #800bed solid 1px;
+   
+}
+table{
+    background-color: #8a2be2;
+    color: white;
+}
+
+.form-group{
+    padding: 20px;
+}
+
+.button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+
+
+
+    </style>
+</head>
+<div class="form-group">
+<body>
+    <h1 style="text-align: center;"><ins>STUDENT REGISTRATION FORM</ins></h1>
+    <form  action="">
+        <fieldset>
+        <legend> REGISTRATION FORM </legend>
+           
+        <div>
+            <label for="firstname">FIRST NAME    </label>
+            <input type="text" name="firstname" id="firstname" maxlength="30" pattern="[a-zA-Z]{30}">
+            <label for="">(max 30 characters a-z and A-Z)</label>
+        </div>
+        <br>
+        <div>
+            <label for="lastname">LAST NAME    </label>
+            <input type="text" name="lastname" id="lastname" maxlength="30" pattern="[a-zA-Z]{30}">
+            <label for="">(max 30 characters a-z and A-Z)</label>
+        </div>
+        <br>
+
+        <div>
+            <label for="DOB">DATE OF BIRTH</label>
+            <input type="date" name="DOB" id="DOB">
+        </div>
+        <br>
+
+        <div>
+            <label for="email">EMAIL ID</label>
+            <input type="email" name="mail" id="email">
+        </div>
+        <br>
+
+        <div>
+            <label for="mobilno">MOBILE NUMBER</label>
+            <input type="number" name="mobilno" id=" mobilno">
+            <label for="">(10 digit number)</label>
+        </div>
+        <br>
+
+        <div>
+        <span>
+            <label for="">GENDER</label>   
+        </span>
+        <span>
+            <label for="Male">Male</label>
+            <input type="radio" name="GENDER" id="Male" value="Male">
+        </span>
+        <span>
+            <label for="Female">Female</label>
+            <input type="radio" name="Female" id="Female" value="Female">
+        </span>
+    </div>
+    <br>
+
+    <div>
+        <label for="">ADDRESS</label>
+      <textarea name="" id="" cols="50" rows="5"></textarea>
+    </div>
+    <br>
+
+    <div>
+        <label for="city">CITY</label>
+        <input type="text" name="city" id="city" maxlength="30" pattern="[a-zA-Z]{30}">
+        <label for="">(max 30 characters a-z and A-Z)</label>
+    </div>
+    <br>
+
+    <div>
+        <label for="pincode">PIN CODE</label>
+        <input type="number" name="pincode" id="" max="6">
+        <label for="">(6 digit number)</label>
+    </div>
+    <br>
+
+    <div>
+        <label for="state">STATE</label>
+        
+        <select name="" id="">
+            <option value="Bihar">Bihar</option>
+            <option value="Kerela">Kerela</option>
+            <option value="uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttrakhand">Uttrakhand</option>
+            <option value="Delhi">Delhi</option>
+        </select>
+        <label for="">(max 30 characters a-z and A-Z)</label>
+    </div>
+    <br>
+
+    <div>
+        <label for="">COUNTRY</label>
+        <select name="" id="">
+            <option value="india">India</option>
+            <option value="bangladesh">Bangladesh</option>
+            <option value="london">London</option>
+            <option value="austria">Austria</option>
+            <option value="south korea">South Korea</option>
+        </select>
+    </div>
+    <br>
+  
+    <span>
+        <label for="">HOBBIES</label>
+    </span>
+    <span>
+        <label for="">Drawing</label>
+        <input type="checkbox" name="hobbies" id="" value="drawing">
+    </span>
+    <span>
+        <label for="">Singing</label>
+        <input type="checkbox" name="hobbies" id="" value="singing">
+    </span>
+    <span>
+        <label for="">Dancing</label>
+        <input type="checkbox" name="hobbies" id="" value="dancing">
+    </span>
+    <span>
+        <label for="">Sketching</label>
+        <input type="checkbox" name="hobbies" id="" value="sketching">
+    </span>
+    <span>
+        <label for="">Others</label>
+        <input type="checkbox" name="" id="">
+        <input type="text" name="" id="">
+    </span>
+    <br>
+
+    <div>
+        <table>  
+     <thead>
+                          <tr>
+                            <th ><label for="">QUALIFICATION</label></th>
+                            <th><h5>SI.No</h5></th>
+                            <th><h5>Examination</h5></th>
+                            <th><h5>Board</h5></th>
+                            <th><h5>Percentage</h5></th>
+                            <th><h5>Year of Passing</h5></th>
+                        </tr>
+                    </thead>
+                    
+                        <TR>
+                            <TH><h5> </h5></TH>
+                            <TH><H5>1</H5></TH>
+                            <TH><H5>Class X </H5></TH>
+                            <TH><input type="text"></TH>
+                            <TH><input type="text"></TH>
+                            <TH><input type="text"></TH>
+                        </TR>
+                        <TR>
+                            <TH><h5> </h5></TH>
+                            <TH><H5>2</H5></TH>
+                            <TH><H5>Class XII </H5></TH>
+                            <TH><input type="text"></TH>
+                            <TH><input type="text"></TH>
+                            <TH><input type="text"></TH>
+                        </TR>
+                        <TR>
+                            <TH><h5> </h5></TH>
+                            <TH><H5>3</H5></TH>
+                            <TH><H5>Graduation </H5></TH>
+                            <TH><input type="text"></TH>
+                            <TH><input type="text"></TH>
+                            <TH><input type="text"></TH>
+                        </TR>
+                        <TR>
+                            <TH><h5> </h5></TH>
+                            <TH><H5>4</H5></TH>
+                            <TH><H5>Masters </H5></TH>
+                            <TH><input type="text"></TH>
+                            <TH><input type="text"></TH>
+                            <TH><input type="text"></TH>
+                        </TR>
+           
+        </table>
+    </div>
+    <br>
+
+    <div>
+        <label for="">COURSES</label>
+    </div>
+    <span>
+        <label for="">APPLIED FOR</label>
+    </span>
+    <span>
+        <label for="BCA">BCA</label>
+        <input type="radio" name="courses" id="BCA" value="BCA">
+    </span>
+    <span>
+        <label for="">B.Com</label>
+        <input type="radio" name="courses" id="B.Com" value="B.Com">
+    </span>
+    <span>
+        <label for="">B.Sc</label>
+        <input type="radio" name="courses" id="B.Sc" value="B.Sc">
+    </span>
+    <span>
+        <label for="">B.A</label>
+        <input type="radio" name="courses" id="B.A" value="B.A">
+    </span>
+    <br>
+    
+       <div class="button-container">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </div>
+
+    </form>
+</fieldset>
+    
+</body>
+</div>
+</html>
